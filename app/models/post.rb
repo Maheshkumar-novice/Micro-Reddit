@@ -4,4 +4,5 @@ class Post < ApplicationRecord
   validates :url, length: { in: 4..40 }
 
   belongs_to :user
+  has_many :comments
 end
